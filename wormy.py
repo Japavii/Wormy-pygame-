@@ -35,6 +35,8 @@ def main():
     global FPSCLOCK, DISPLAYSURF, BASICFONT
 
     pygame.init()
+    pygame.mixer.music.load("title.mp3")
+    pygame.mixer.music.play(-1)
     FPSCLOCK = pygame.time.Clock()
     DISPLAYSURF = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT))
     BASICFONT = pygame.font.Font('freesansbold.ttf', 18)
